@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="txtMess"><%= message %></div>
+<div>
+    <% if (data != null){ %>
+        <div>
+            <p><strong>ID: </strong><%= data._id %></p>
+            <p><strong>Mã:</strong> <%= data.ma %></p>
+            <p><strong>Nhãn hiệu:</strong> <%= data.nhanhieu %></p>
+            <p><strong>Năm sx:</strong><%= data.namsx %></p>
+            <p><strong>Giá gốc:</strong> <%= data.giagoc %></p>
+            <p><strong>Giá bán:</strong> <%= data.giaban %></p>
+            <% for(var j = 0; j < data.avatar.length;j++) { %>
+                <img style="width: 300px; height: 500px" src="images/<%= data.avatar[j] %>">
+            <% } %>
+        </div>
+    <% } %>
+</div>
+
+</body>
+</html>
