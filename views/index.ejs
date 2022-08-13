@@ -42,11 +42,11 @@
                 <% for(var j = 0; j < items[i].avatar.length;j++) { %>
                     <img src="images/<%= items[i].avatar[j] %>" style=" width: 45%;height: 400px;">
                 <% } %>
-                <h5><%= items[i].nhanhieu %></h5>
-                <p><%= items[i].ma %></p>
-                <p><%= items[i].namsx %></p>
-                <p><%= items[i].giagoc %></p>
-                <p><%= items[i].giaban %></p>
+                <h3>Mã sản phẩm: <%= items[i].ma %></h3>
+                <p>Nhãn hiệu: <%= items[i].nhanhieu %></p>
+                <p>Năm sản xuất: <%= items[i].namsx %></p>
+                <p>Giá gốc: <%= items[i].giagoc %></p>
+                <p>Giá bán: <%= items[i].giaban %></p>
                 <div>
                     <button style="background: darkorange">
                         <a class="text-decoration-none text-black fw-bold"

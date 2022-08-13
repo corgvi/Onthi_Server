@@ -13,11 +13,11 @@
     <% if (data != null){ %>
         <div>
             <p><strong>ID: </strong><%= data._id %></p>
-            <p><strong>Mã:</strong> <%= data.ma %></p>
-            <p><strong>Nhãn hiệu:</strong> <%= data.nhanhieu %></p>
-            <p><strong>Năm sx:</strong><%= data.namsx %></p>
-            <p><strong>Giá gốc:</strong> <%= data.giagoc %></p>
-            <p><strong>Giá bán:</strong> <%= data.giaban %></p>
+            <p><strong>Mã: </strong> <%= data.ma %></p>
+            <p><strong>Nhãn hiệu: </strong> <%= data.nhanhieu %></p>
+            <p><strong>Năm sx: </strong><%= data.namsx %></p>
+            <p><strong>Giá gốc: </strong> <%= data.giagoc %></p>
+            <p><strong>Giá bán: </strong> <%= data.giaban %></p>
             <% for(var j = 0; j < data.avatar.length;j++) { %>
                 <img style="width: 300px; height: 500px" src="images/<%= data.avatar[j] %>">
             <% } %>
